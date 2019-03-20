@@ -1,0 +1,92 @@
+.banner{
+    height: 500px;
+    background: url(../img/research/banner.png) no-repeat center center/1920px 500px;
+}
+
+.research{
+    /* height: 1050px; */
+    background-color: #fbfaf9;
+    /* padding: 0 360px; */
+    text-align: center;
+    padding-bottom: 190px;
+}
+.about>img,.research>img,.case>img,.contact>img{
+    height: 40px;
+    margin-top: 80px;
+}
+.about h4,.research h4,.case h4,.contact h4{
+    font-size: 30px;
+    color: #333333;
+    font-family: "黑体";
+    height: 30px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.about h5,.research h5,.case h5,.contact h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333333;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 13px;
+    margin-bottom: 45px;
+}
+.research h5{
+    margin-bottom: 75px;
+}
+.research>ul{
+    width: 1200px;
+    margin: 0 auto;
+    /* margin-bottom: 190px; */
+}
+.research li{
+    margin-top: 40px;
+}
+.research li h6{
+    font-size: 20px;
+    color: #666666;
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.research li span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #36c7ff;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-right: 16px;
+}
+.research li p{
+    font-size: 14px;
+    color: #999999;
+    line-height: 28px;
+    padding-left: 25px;
+    text-align: justify;
+    font-weight: normal;
+}
+.research li li{
+    margin-top: 0px;
+}
+.research li li h6{
+    color: #666666;
+    font-weight: 900;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin: 7px 0;
+}
+.research i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url(../img/research/cir.png) no-repeat 0 0/10px 10px;
+    margin-right: 10px;
+}
+.research li li p{
+    padding-left: 45px;
+}

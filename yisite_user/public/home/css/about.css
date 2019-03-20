@@ -1,0 +1,87 @@
+.banner{
+    height: 500px;
+    background: url(../img/about/banner.png) no-repeat center center/1920px 500px;
+}
+
+.about{
+    height: 730px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.about>img,.research>img,.case>img,.contact>img{
+    height: 40px;
+    margin-top: 80px;
+}
+.about h4,.research h4,.case h4,.contact h4{
+    font-size: 30px;
+    color: #333333;
+    font-family: "黑体";
+    height: 30px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.about h5,.research h5,.case h5,.contact h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333333;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 13px;
+    margin-bottom: 45px;
+}
+.about>div{
+    overflow: hidden;
+    height: 370px;
+    width: 1200px;
+    margin: 0 auto;
+    background: url(../img/index/about.png) no-repeat 0 0/560px 370px;
+}
+.about>div>div{
+    width: 646px;
+    float: right;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 0 32px;
+}
+.about h6{
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+.about p{
+    text-align: justify;
+    line-height: 32px;
+    margin-top: 18px;
+}
+.content ul{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+}
+.content li{
+    margin-top: 40px;
+}
+.content li h6{
+    font-size: 20px;
+    color: #666666;
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.content li span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #36c7ff;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-right: 16px;
+}
+.content li p{
+    font-size: 14px;
+    color: #999999;
+    line-height: 28px;
+    padding-left: 25px;
+}

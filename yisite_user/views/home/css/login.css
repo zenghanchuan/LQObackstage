@@ -1,0 +1,22 @@
+.login{
+    width: 202px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -100px;
+    text-align: center;
+}
+.login input{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+#btn{
+    background-color: blue;
+    width: 202px;
+    height: 52px;
+    color: white;
+}

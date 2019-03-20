@@ -1,0 +1,108 @@
+.banner{
+    height: 500px;
+    background: url(../img/contact/banner.png) no-repeat center center/1920px 500px;
+}
+
+
+.contact>img{
+    height: 40px;
+    margin-top: 110px;
+}
+.about h4,.research h4,.case h4,.contact h4{
+    font-size: 30px;
+    color: #333333;
+    font-family: "黑体";
+    height: 30px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.about h5,.research h5,.case h5,.contact h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333333;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 13px;
+    margin-bottom: 45px;
+}
+.contact{
+    height: 887px;
+    text-align: center;
+    background-color: #fbfaf9;
+}
+.contact ul{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+.contact li{
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.contact h6{
+    font-size: 23px;
+    line-height: 23px;
+    height: 23px;
+    margin-bottom: 4px;
+    margin-top: 56px;
+}
+.contact .right h6{
+    padding-left: 42px;
+}
+.contact input{
+    width: 531px;
+    height: 50px;
+    border: 2px solid #e7e7e7;
+    margin-top: 15px;
+    outline: none;
+    padding-left: 20px;
+    background-color: transparent;
+}
+.contact textarea{
+    height: 134px;
+    width: 531px;
+    margin-top: 15px;
+    outline: none;
+    border: 2px solid #e7e7e7;
+    padding-left: 20px;
+    padding-top: 17px;
+    resize:none;
+    background-color: transparent;
+    font-family: Arial;
+}
+.contact #btn{
+    width: 166px;
+    height: 38px;
+    border-color: #dddddc;
+    background-color: transparent;
+    color: #36c7ff;
+    padding: 0;
+}
+.contact .right p{
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    color: #666666;
+    padding-left: 42px;
+    margin-top: 22px;
+}
+.contact .right .on{
+    color: #36c7ff;
+}
+.contact .right ul{
+    margin-top: 37px;
+    padding-left: 42px;
+}
+.contact .right li{
+    font-size: 14px;
+    color: #333333;
+    width: 100%;
+    height: 24px;
+    background: url(../img/index/shape1.png) no-repeat 0 0/18px 24px;
+    line-height: 24px;
+    padding-left: 42px;
+    margin-bottom: 22px;
+}

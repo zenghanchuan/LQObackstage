@@ -1,0 +1,98 @@
+.banner{
+    height: 500px;
+    background: url(../img/successCase/banner.png) no-repeat center center/1920px 500px;
+}
+
+
+.case>img{
+    height: 40px;
+    margin-top: 80px;
+}
+.case h4{
+    font-size: 30px;
+    color: #333333;
+    font-family: "黑体";
+    height: 30px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.case h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333333;
+    font-weight: normal;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 13px;
+    margin-bottom: 45px;
+}
+.case{
+    /* height: 960px; */
+    text-align: center;
+    background-color: #fafafa;
+}
+.case h4{
+    color: 333333;
+}
+.case h5{
+    color: 333333;
+    margin-bottom: 70px;
+}
+.case>a{
+    width: 98px;
+    height: 34px;
+    display: inline-block;
+    border: 1px solid #666666;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.case>a:hover{
+    background-color: #17aae4;
+    border-color: #1797c8;
+}
+.case .on{
+    background-color: #39c8ff;
+    border-color: #1797c8;
+}
+.case ul{
+    margin-top: 40px;
+}
+.case li{
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+    width: 542px;
+    height: 160px;
+    background-color: white;
+    padding: 0 19px;
+    overflow: hidden;
+}
+.case li img{
+    height: 122px;
+    margin-top: 19px;
+    float: left;
+    margin-right: 19px;
+}
+.case li div{
+    float: left;
+    width: 361px;
+    text-align: left;
+}
+.case li h6{
+    color: #333333;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+.case li p{
+    color: #999999;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: justify;
+}

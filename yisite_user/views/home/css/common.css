@@ -1,0 +1,109 @@
+﻿body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+fieldset, img {
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+	overflow-x: hidden;
+}
+/* 头部样式 */
+.main{
+    min-width: 1920px;
+    width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	left:50%;
+	margin-left: -960px;
+}
+.header{
+    height: 78px;
+    border-bottom: 2px solid #36c7ff;
+}
+.header div{
+    width: 1200px;
+    margin: 0 auto;
+    height: 78px;
+}
+.header img{
+    height: 56px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 301px;
+}
+.header ul{
+    height: 78px;
+    /* float: left; */
+}
+.header ul>li{
+    list-style: none;
+    float: left;
+    height: 78px;
+    line-height: 78px;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+.header ol{
+    position: relative;
+    top: 2px;
+    display: none;
+    background-color: white;
+}
+.header ol li{
+    height: 45px;
+    line-height: 45px;
+}
+.header ol a{
+    font-size: 14px;
+}
+.header ul>li:hover ol{
+    display: block;
+}
+.header ul>li:hover>a{
+    color: #36c7ff;
+    border-bottom: 3px solid #36c7ff;
+    padding-bottom: 28px;
+}
+.header ol>li:hover{
+    background-color: #fafafa;
+}
+.header ol>li:hover>a{
+    color: #36c7ff;
+}
+.header a{
+    color: #666666;
+    font-size: 16px;
+}
+.header .on{
+    color: #36c7ff;
+    border-bottom: 3px solid #36c7ff;
+    padding-bottom: 28px;
+}
+/* 底部样式 */
+.footer{
+    height: 126px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 126px;
+    color: white;
+    font-size: 14px;
+    border-top: 4px solid #36c7ff;
+}

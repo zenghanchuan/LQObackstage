@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="./home/css/common.css">
+    <link rel="stylesheet" href="./home/css/news.css">
+    <link href="./home/img/logo.ico" rel="SHORTCUT ICON" />
+    <!-- <script>
+        window.onload = function () {
+            var request = new XMLHttpRequest();
+            var data = [];
+            var list = [];
+            request.open('GET', 'http://120.77.214.89:3000/api/news/getnews');
+            request.send();
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && request.status == 200) {
+                    data = request.responseText;
+                    list = JSON.parse(data);
+                    console.log(list);  
+                    
+                }
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <div class="main">
+        <%- include("header") %>
+        <div class="news" id="news">
+            <img src="./home/img/index/S-logo.png" alt="">
+            <h4>新闻资讯</h4>
+            <h5>NEWS AND INFORMATION</h5>
+            <ul>
+                <li class="left">
+                    <a href="/news_msg">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>
+                                    <% data.forEach(function(item){ %>
+                                        <h6><%=item.news_title  %></h6>
+                                        <title><%=item.news_content  %></title>
+                                    <% }) %>
+                                </h6>
+                                <p></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/news_msg">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>中国4G时代新品牌设计者</h6>
+                                <p>有道翻译提供及时免费的中文、英语、日语、韩语、法语、俄语、西班牙语等等。。。。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="left">
+                    <a href="/news_msg">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>中国4G时代新品牌设计者</h6>
+                                <p>有道翻译提供及时免费的中文、英语、日语、韩语、法语、俄语、西班牙语等等。。。。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/news_msg">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>中国4G时代新品牌设计者</h6>
+                                <p>有道翻译提供及时免费的中文、英语、日语、韩语、法语、俄语、西班牙语等等。。。。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="left">
+                    <a href="/detailCase">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>中国4G时代新品牌设计者</h6>
+                                <p>有道翻译提供及时免费的中文、英语、日语、韩语、法语、俄语、西班牙语等等。。。。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/detailCase">
+                        <div>
+                            <div class="news_left">
+                                <h>24</h>
+                                <p>2018.08</p>
+                            </div>
+                            <img src="./home/img/news/n_1001.png" alt="">
+                            <div class="news_right">
+                                <h6>中国4G时代新品牌设计者</h6>
+                                <p>有道翻译提供及时免费的中文、英语、日语、韩语、法语、俄语、西班牙语等等。。。。</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- 分页结构 -->
+
+            <div id="barcon" name="barcon"></div>
+
+        </div>
+        </div>
+        <%- include("footer") %>
+    </div>
+</body>
+</html>

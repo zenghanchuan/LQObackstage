@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../home/css/common.css">
+    <link rel="stylesheet" href="../home/css/contact.css">
+	<link href="../home/img/logo.ico" rel="SHORTCUT ICON" />
+    <title>联系我们</title>
+</head>
+<body>
+    <div class="main">
+        <%- include("header") %>
+        <div class="content">
+            <div class="contact">
+                <img src="../home/img/index/S-logo.png" alt="">
+                <h4>联系  我们</h4>
+                <h5>CONTACT US</h5>
+                <ul>
+                    <li class="left">
+                        <h6>您的联系方式</h6>
+                        <input type="text" name="contact_name" id="contact_name" style="color:#999" value="请输入您的姓名" 
+                        onfocus="if(this.value=='请输入您的姓名'){this.value=' ';this.style.color='#424242'}"
+                        onblur="if(this.value==' '){this.value='请输入您的姓名';this.style.color='#999'}">
+
+                        <input type="text" name="contact_email" id="contact_email" style="color:#999" value="请输入您的电子邮件地址" 
+                        onfocus="if(this.value=='请输入您的电子邮件地址'){this.value=' ';this.style.color='#424242'}"
+                        onblur="if(this.value==' '){this.value='请输入您的电子邮件地址';this.style.color='#999'}">
+
+                        <input type="text" name="contatc_phone" id="contatc_phone" style="color:#999" value="请输入您的电话号码" 
+                        onfocus="if(this.value=='请输入您的电话号码'){this.value=' ';this.style.color='#424242'}"
+                        onblur="if(this.value==' '){this.value='请输入您的电话号码';this.style.color='#999'}">
+
+                        <textarea name="contact_question" id="contact_question" cols="30" rows="10"style="color:#999" value="请输入您遇到的问题" 
+                        onfocus="if(this.value=='请输入您遇到的问题'){this.value=' ';this.style.color='#424242'}"
+                        onblur="if(this.value==' '){this.value='请输入您遇到的问题';this.style.color='#999'}">请输入您遇到的问题</textarea>
+                        
+                        <input type="button" value="立即发送" id="btn">
+
+                    </li>
+                    <li class="right">
+                        <h6>人才加入</h6>
+                        <p>再策点你不只是得到一份工作，而且可以得到一个终身学习的平台</p>
+                        <p>再策点你不只是得到一个某方面的专家，你必须涉猎和深悟更多的行业</p>
+                        <p>再策点你需要将你的智商和情商完美的结合，从而为我们的客户创造最大的价值</p>
+                        <p>再策点你必须坚持的就是真实，然后还是真实。我们将追求真实数据视为企业的生命</p>
+                        <p class="on">我们需要：研究经理、项目经理、项目督导、实习生</p>
+                        <ul>
+                            <li>四川省成都市高新区，天益街38号，理想中心4栋407</li>
+                            <li style="background: url(../home/img/index/shape2.png) no-repeat 0 0/24px 24px;">028-8441 7660</li>
+                            <li style="background: url(../home/img/index/shape3.png) no-repeat 0 0/24px 24px;">hr@yufankeji.cn</li>
+                            <li style="background: url(../home/img/index/shape4.png) no-repeat 0 0/24px 24px;">www.yiyuan028.com</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="../home/js/contact.js"></script>
+        <%- include("footer") %>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>具体新闻</title>
+    <link href="./home/img/logo.ico" rel="SHORTCUT ICON" />
+    <link rel="stylesheet" href="./home/css/news_msg.css">
+    <link rel="stylesheet" href="./home/css/common.css">
+    <script>
+        window.onload = function () {
+
+            var request = new XMLHttpRequest();
+
+            if (window.XMLHttpRequest)
+            {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                request = new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                request= new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            // 发送请求
+            request.open('GET', 'http://192.168.0.147:3000/api/news/getnews');
+            request.send();
+            request.onreadystatechange = function () {
+                console.log(request.status,request.readyState)
+                // 状态发生变化时，函数被回调
+                if (request.readyState == 4 && request.status == 200) {
+                    // 成功完成
+                    data = request.responseText;
+                }
+                console.log(data);
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <%- include("header") %>
+        <div class="msg">
+            <h5>人社部正式宣布推出电子社保卡</h5>
+            <h6>信息来源：策点市场研究公司 发布时间：2018-04-24</h6>
+            <p>
+                电子社保卡来了！在22日福建首届“数字中国”建设峰会上，人力资源社会保障部宣布，正式签发首张全国统一的电子社保卡，未来在全国推广，以后用支付宝刷脸就可以领取。
+                记者观察发现，仅在本月，就先后有国家市场监督管理总局的 “电子营业执照”、公安部一所的“电子身份证”、人社部的“电子社保卡”亮相支付宝，证件电子化速度越来越快。
+            </p>
+            <p>支付宝刷脸就能领卡</p>
+            <p>忘带实体卡也不怕</p>
+            <p>早在2016年6月，社保卡就开始了在线化服务的探索。当时深圳人社局与支付宝合作，率先探索用支付宝绑定社保卡，深圳成为全国第一个实现医保移动支付城市。</p>
+            <p>
+                随后，各地社保局与支付宝等进行电子社保卡的可行性探索。一年多时间里，能把社保卡“放进”支付宝的城市，包括杭州、武汉、深圳等14个。
+                支持用支付宝办理社保缴费的城市有南京、长沙等40多个；可以办理社保查询等人社服务的城市有上海、天津等90多个。
+
+            </p>
+            <p>
+                把社保卡“放进”支付宝非常简单。只要在支付宝首页搜索“城市+社保卡”，如“武汉社保卡”，根据提示完成“刷脸”即可领取。
+                以后，老百姓在医院、药店就诊买药时，再也不怕忘带社保卡和现金了
+            </p>
+            <p>
+                此次人社部正式对外发声，意味着电子社保卡在各地的探索应用，得到了人社部认可。
+                人社部相关负责人表示，在支付宝里绑定了社保卡的市民，未来可便捷地升级为符合人社部标准的全国统一电子社保卡。
+            </p>
+            <p>
+                今年4大电子证件落地
+            </p>
+            <p>
+                证件电子化明显提速
+            </p>
+            <p>
+                而记者注意到，今年以来各类证件的电子化明显提速。2016年10月，深圳交警部门和支付宝合作推出全国首个电子驾驶证。
+                今年3月，浙江省公安厅和支付宝合作推出电子居住证。
+            </p>
+            <p>
+                而仅在2018年4月，就先后有国家市场监督管理总局的“电子营业执照”、公安部一所的“电子身份证”、人社部的“电子社保卡”亮相支付宝。
+                落地速度越来越快，宣布推出电子证件的机构也从地方机构升级为国家主管机构。
+            </p>
+            <p>
+                互联网业内人士表示，证件电子化是“互联网+政务”的必然发展趋势，一是机构之间的数据逐步实现了打通，二是以前需要本人带实体证件到现场办的事，
+                现在在手机上“刷脸”就能证明“我就是我”，足不出户就能办理。借助互联网刷脸认证、安全保障技术，
+                证件电子化将从前几年的小范围探索试点阶段，加速进入全国推广阶段。
+            </p>
+        </div>
+        <%- include("footer") %>
+    </div>
+</body>
+</html>

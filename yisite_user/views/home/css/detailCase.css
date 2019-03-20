@@ -1,0 +1,24 @@
+.banner{
+    height: 500px;
+    background: url(../img/detailCase/banner.png) no-repeat center center/1920px 500px;
+}
+
+.research{
+    padding: 0 360px;
+    margin-bottom: 180px;
+}
+.research h5{
+    font-size: 22px;
+    color: #333333;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 102px;
+    margin-bottom: 64px;
+}
+.research p{
+    font-size: 14px;
+    color: #999999;
+    line-height: 28px;
+    margin-top: 28px;
+}
